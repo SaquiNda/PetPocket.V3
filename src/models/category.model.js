@@ -1,13 +1,12 @@
-const friends =(sequelize, type) =>{
-    return sequelize.define('friends', {
+const categorys =(sequelize, type) =>{
+    return sequelize.define('categorys', {
         id: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
         
-        name:type.STRING,
-        descripcion:type.STRING,
+        name_category:type.STRING,
 
         createPublic:{
             type: 'TIMESTAMP',
@@ -24,4 +23,4 @@ const friends =(sequelize, type) =>{
         })
 }
 
-module.exports = friends
+module.exports = categorys

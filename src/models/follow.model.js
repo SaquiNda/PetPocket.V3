@@ -1,5 +1,5 @@
-const friends =(sequelize, type) =>{
-    return sequelize.define('friends', {
+const follows =(sequelize, type) =>{
+    return sequelize.define('follows', {
         id: {
             type: type.INTEGER,
             primaryKey: true,
@@ -7,7 +7,7 @@ const friends =(sequelize, type) =>{
         },
         
         name:type.STRING,
-        descripcion:type.STRING,
+        fecha_inicio:type.STRING,
 
         createPublic:{
             type: 'TIMESTAMP',
@@ -24,4 +24,4 @@ const friends =(sequelize, type) =>{
         })
 }
 
-module.exports = friends
+module.exports = follows

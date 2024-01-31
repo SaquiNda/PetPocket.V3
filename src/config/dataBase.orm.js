@@ -26,7 +26,11 @@ const publicsModel = require('../models/public.model');
 const notificationsModel = require('../models/notification.model');
 const friendsModel = require('../models/friend.model');
 const geolocationsModel = require('../models/geolocation.model');
-const commentarysModel = require("../models/commetary.model")
+const commentarysModel = require("../models/commetary.model");
+const categorysModel = require("../models/category.model");
+const category_publicsModel = require("../models/category_public.model");
+const solicitudsModel = require("../models/solicitud.model");
+const followsModel = require("../models/follow.model")
 
 
 
@@ -51,7 +55,11 @@ const publics = publicsModel(sequelize, Sequelize);
 const notifications = notificationsModel(sequelize, Sequelize);
 const friends = friendsModel(sequelize, Sequelize);
 const geolocations = geolocationsModel(sequelize, Sequelize);
-const commetarys = commentarysModel(sequelize, Sequelize)
+const commetarys = commentarysModel(sequelize, Sequelize);
+const categorys = categorysModel(sequelize, Sequelize);
+const category_publics = category_publicsModel(sequelize, Sequelize);
+const solicituds = solicitudsModel(sequelize, Sequelize);
+const follows = followsModel(sequelize, Sequelize);
 
 //Relaciones
 
@@ -70,8 +78,15 @@ publics.belongsTo(users);
 users.hasMany(commetarys);
 commetarys.belongsTo(users);
 
+publics.hasMany(categorys);
+categorys.belongsTo(publics);
 
+categorys.hasMany(category_publics);
+category_publics.belongsTo(categorys);
 
+friends.hasMany(solicituds);
+
+users.hasMany(follows);
 
 // Exportar el objeto sequelize
 module.exports = sequelize;
