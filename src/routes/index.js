@@ -1,12 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const { isLoggedIn } = require('../lib/auth');
+//const { isLoggedIn } = require('../lib/auth');
 
 
-router.get('/', isLoggedIn, async (req, res) => {
-    res.render('Pages/Dashboard');
+router.get('/', async (req, res) => {
+    res.render('Pages/home');
 });
-
 
 
 module.exports = router;
