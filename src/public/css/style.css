@@ -1,0 +1,322 @@
+/* Estilos base para pantallas más grandes */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    
+}
+
+nav button {
+    padding: 8px;
+    margin-left: 10px;
+    background-color: #FCA04B;
+    border: #FCA04B;
+    
+}
+
+a {
+    margin-left: 10px;
+    
+}
+.inicioses {
+    background-color: #FCA04B;
+    color: black;
+    text-decoration: none;
+}
+
+/*contenedores*/
+
+.Publicaciones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que las columnas se muevan a la siguiente línea si no hay suficiente espacio */
+}
+
+#columna1,
+#columna2 {
+    margin-right: 240px; /* Ajusta el valor según la separación que desees */
+}
+
+#columna1{
+    max-width:250px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+/* Estilos generales para la lista y el contenedor */
+
+#contenedor1 {
+    max-width:100%; /* Ajusta el ancho del contenedor según tus necesidades */
+    margin: 0;
+    margin-bottom: 10px;
+    border: 3px solid #FCA04B; 
+    padding: 10px 30px;
+}
+
+ul {
+    list-style-type: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Ajusta el margen entre elementos de la lista según tus necesidades */
+}
+
+#contenedor1 img{
+    width: 30px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    margin-right: 10px; /* Ajusta el margen entre la imagen y el texto según tus necesidades */
+    padding-right: 20px;
+}
+#contenedorTend {
+    margin: 0;
+    height: 300px; 
+    border: 3px solid #FCA04B; 
+    padding: 10px 0px;
+    padding-right: 10px;
+    
+}
+#contenedorTend a{
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto del contenedor */
+    display: block; /* Hace que el enlace ocupe todo el espacio del contenedor */
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/*estilo de la segunda columna*/
+
+#columna2{
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+#seguir{
+    background-color: #FFCC5F;;
+    border: 3px solid #FFCC5F; 
+    border-radius: 50px;
+    max-width:100%;
+    margin-bottom: 10px;
+}
+
+#seguir ul {
+    padding: 0px;
+    text-align: center; /* Alinea las imágenes al centro del contenedor */
+}
+
+#seguir li {
+    display: inline-block; /* Hace que los elementos de lista aparezcan en línea */
+    margin: 0px; /* Ajusta el margen entre las imágenes según tus necesidades */
+    
+}
+
+#seguir img {
+    width: 35px; /* Ajusta el ancho según tus necesidades */
+    height: 35px; /* Ajusta la altura según tus necesidades */
+    border: 3px solid #818180;
+    border-radius: 50%; /* Hace que el borde sea redondeado, creando la apariencia de un círculo */
+}
+
+#seguir img:hover {
+    border: 3px solid #FCA04B;
+    opacity: 0.8; /* Ajusta la opacidad al pasar el ratón sobre la imagen (opcional) */
+}
+
+#publicacionImg img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#descripcion {
+    max-width: 100%;
+    
+    border: 3px solid #FCA04B;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 0px;
+}
+
+#foto-nombre {
+    display: flex;
+    align-items: center;
+}
+
+#foto-circular {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+#info-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#boton-seguir {
+    background-color: #FCA04B;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#descripcionT {
+    margin-top: 15px;
+}
+
+/*estilo columna 3*/
+
+#columna3{
+    max-width:250px;
+    display: flex;
+    flex-direction: column;
+}
+
+#publicimg img{
+    max-width: 100%;
+}
+
+#publicdescrip{
+    max-width: 100%;
+    background-color: #e1e1e1;
+}
+
+.fecha-likes{
+    max-height: 35px;
+    max-width: 125px;
+    background-color: #e1e1e1;
+    display: flex;
+}
+
+#fecha{
+margin-top: 5px;
+
+}
+
+#corazoncon .corazon {
+    width: 20px;
+    height: 20px;
+    background-image: url('/img/corazon.svg'); /* Reemplaza con la URL de tu imagen de corazón */
+    background-size: cover;
+    border: none; /* Cambiado de 'border: #corazoncon;' a 'border: none;' */
+    cursor: pointer;
+    padding-right: 5px;
+    background-color: #e1e1e1;
+}
+
+
+.corazon.rojo {
+    filter: brightness(1.5); /* Cambia el brillo para resaltar el color rojo */
+}
+
+#contador {
+    margin-left: 2px;
+    font-size: 18px;
+}
+
+/* Media query para pantallas más pequeñas (ajusta según sea necesario) */
+
+@media only screen and (max-width: 430px) {
+ #columna3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        order: 3;
+    }
+
+    nav input[type="text"] {
+        width: calc(100% - 70px);
+        margin-bottom: 10px;
+    }
+
+    nav button {
+        width: 70px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    a {
+        margin-left: 0;
+        order: 2;
+    }
+
+    a:last-child {
+        order: 1;
+    }
+
+    #columna1,
+    #columna2 {
+        margin-right:calc(5px + 5 * ((100vw - 320px) / 448)); /* Fórmula para reducir gradualmente el margen */
+    }
+
+    #columna1 {
+        max-width: 60px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #columna2 {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+
+    #contenedor1 span {
+        display: none;
+    }
+
+    #contenedor1 {
+        padding: 10px;
+    }
+
+    #contenedor1 img {
+        padding-right: 0;
+    }
+
+    #contenedor {
+        max-width: 60px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    #contenedorTend a {
+        padding: 1px;
+        font-size: 9px;
+    }
+}
+

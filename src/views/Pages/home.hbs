@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header class="inicio">
+        <img src="/img/Imagen1.png" alt="Logo">
+
+        <nav class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar...">
+            <button onclick="buscar()">Buscar</button>
+            <script src="/buscador.js"></script>
+        </nav>
+
+        <a href="/loginP.html">
+            <img src="/img/campana.png" alt="Ícono de Notificación">
+        </a>
+
+        <a href="/loginP.html" alt="inicioses" class="inicioses">Iniciar sesión</a>
+    </header>
+
+    <main class="Publicaciones">
+        <aside id="columna1">
+            <div id="contenedor1">
+                <ul>
+                    <li>
+                        <a href=""><img src="/img/usuarios-alt.svg" alt="Icono 1" href="/loginP.html">
+                        <span>Siguiendo</span></a>
+                    </li>
+                    <li>
+                      <a href=""><img src="/img/icons8-brújula-50.png" alt="Icono 2">
+                        <span>Explorar</span></a> 
+                    </li>
+                    <li>
+                        <a href=""><img src="/img/usuario.svg" alt="Icono 3">
+                        <span>Perfil</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="contenedorTend">
+                <a href="https://ejemplo.com/tendencia1" target="_blank">
+                    #DiseñoWeb</a>
+                <a href="https://ejemplo.com/tendencia1" target="_blank">
+                    #DiseñoWeb</a>
+            </div>
+        </aside>
+<!-- es la segunda columna -->
+
+        <div id="columna2">
+            <div id="seguir">
+                <ul>
+                    <!-- Repite esta estructura según sea necesario -->
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.ejemplo.com">
+                            <img src="/img/usuario.svg" alt="foto">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="publicacionImg">
+                <img src="/img/Imagen2.png" alt="foto">
+            </div>
+            <div id="descripcion">
+                <div id="foto-nombre">
+                    <img src="/img/usuario.svg" alt="Foto de perfil" id="foto-circular">
+                    <div id="info-usuario">
+                        <div id="nombre-fecha">
+                            <h2>Nombre de Usuario</h2>
+                            <p>01/01/2023</p>
+                        </div>
+                        <button id="boton-seguir">Seguir</button>
+                    </div>
+                </div>
+                <p id="descripcionT">
+                    Esta es la descripción del perfil. Puedes escribir aquí más detalles sobre el usuario.
+                </p>
+            </div>
+        </div>
+        <div id="columna3">
+            <div id="publicimg">
+                <img src="/img/Imagen3.png" alt="publica1"></img>
+            </div>
+            <div id="publicdescrip">
+                <p id="descrip">
+                    Esta es la descripción del perfil. Puedes escribir aquí más detalles sobre el usuario.
+                </p>
+                <div class="fecha-likes">
+                <p id="fecha">01/01/2023</p>
+                <div id="corazoncon">
+                    <button id="corazon-btn" class="corazon"></button>
+                    <span id="contador">0</span>
+                </div>
+                </div>
+            </div>
+            <div id="publicimg">
+                <img src="/img/Imagen4.png" alt="publica2"></img>
+            </div>
+            <div id="publicdescrip">
+                <p id="descrip">
+                    Esta es la descripción del perfil. Puedes escribir aquí más detalles sobre el usuario.
+                </p>
+                <div class="fecha-likes">
+                <p id="fecha">01/01/2023</p>
+                <div id="corazoncon">
+                    <button id="corazon-btn" class="corazon"></button>
+                    <span id="contador">0</span>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+   
+</body>
+
+</html>
