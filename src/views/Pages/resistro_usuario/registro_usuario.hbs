@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/public/css/registro_usuario.css">
+    <script >
+        // Show/hide password onClick of button using Javascript only
+
+// https://stackoverflow.com/questions/31224651/show-hide-password-onclick-of-button-using-javascript-only
+
+function show() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'text');
+}
+
+function hide() {
+    var p = document.getElementById('pwd');
+    p.setAttribute('type', 'password');
+}
+
+var pwShown = 0;
+
+document.getElementById("eye").addEventListener("click", function () {
+    if (pwShown == 0) {
+        pwShown = 1;
+        show();
+    } else {
+        pwShown = 0;
+        hide();
+    }
+}, false);
+    </script>
+    <title>Registro de Usuario</title>
+</head>
+<body>
+    
+<div id='AppendHere'></div>
+<!--start login form-->
+<form id="loginform" action="#"><!--action="the site link"-->
+	<!--start header-->
+	<h1>Registro de Usuario</h1>
+	<p><a href="#" target="_blank"> PETPOCKET</a></p>
+    <!--site link-->
+    <!--end site-->
+    
+    <div class="input-info">
+        <!--the input div containe the information of the user-->
+        <i class="fa fa-user"></i>
+        <!--user name-->
+        <input type="text" placeholder="Usuario">
+        <i class="fa fa-envelope"></i>
+        <!--user email-->
+        <input type="email" placeholder="Correo" required autocomplete="off" validate>
+        <i class="fa fa-lock"></i>
+        <!--yser password-->
+        <input type="password" placeholder="Contraseña">
+        <!--the checkbox to make the browser remember the user-->
+        <input type="checkbox">
+        <span>Recordar mi Contraseña</span><br>
+    </div>
+
+    <div class="log-sign"><!--the login button and the sign up button>[to the sign up page]-->
+        <button class="login" form="loginform"><i class="fa fa-mail-forward (alias)"></i> Iniciar Sesión</button><!--log in-->
+
+        <a href="#" target="_blank"><!--the link to the sign up page-->
+            <button class="signup" form="signupform"><i class="fa fa-plus"></i> Registrate</button>
+        </a>
+    </div><!--end of the log-sign-->
+        
+    <div class="social-media"><!--sign up by fb and tw-->
+		<button class="btn1">
+		<a href="#" target="_blank"><i class="fa fa-facebook"></i> Iniciar Sesión con Facebook</a>
+		</button>
+
+		<button class="btn2">
+		<a href="#" target="_blank"><i class="fa fa-twitter"></i> Iniciar Sesión con Gmail</a>
+		</button>
+	</div>
+
+	<p class="forget-password">Si olvido su contraseña haga click aki <a href="#">click</a></p>
+
+</form>
+<!--End login form-->
+
+</body>
+</html>
