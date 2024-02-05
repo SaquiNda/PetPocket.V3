@@ -1,0 +1,169 @@
+input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    padding: 8px 15px;
+    background-color: #f3a007;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+form {
+    padding-left: 0%;
+    padding-top: -5%;
+    padding-inline: 0%;
+    margin-top: -45px;
+   
+}
+.cuadro{
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    border: 5px solid orange;
+    margin-top:10px;
+
+}
+.Tendencias{
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    border: 5px solid orange;
+    margin-top:10px;
+
+}
+.borde{
+    position:absolute;
+    border: 3px solid;
+    height: 100px;
+    width: 700px;
+    border-radius: 10px;
+    background-color: orange;
+    top: 100px;
+    margin-left: 500px;
+
+}
+.Amigos{
+    position: relative;
+    margin-top: -550px;
+    margin-right:200px;
+}
+.Separador{
+    margin-left:400px;
+}
+button{
+    border:0;
+    background-image: linear-gradient(
+        150deg,
+        #9500,
+        #09F,
+        #00DDFF
+    );
+    border-radius: 8px;
+color:#fff;
+display: flex;
+font-size: 18px;
+padding: 4px;
+cursor: pointer;
+transition: .3s;
+}
+
+button span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+button:hover span {
+    background: none;
+}
+button:active {
+    transform: scale(0,9)
+}
+.Solicitudes{
+    position: relative;
+    margin-left: 400px;
+    
+}
+.img-1{
+    margin-right: 10%;
+    
+}
+.img-2{
+    margin-right: 10%;
+    
+}.img-3{
+    margin-right: 10%;
+    
+}
+.Seguir{
+    position: relative;
+    margin-left: 700px;
+    margin-top: -63px;
+}
+.per1{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.per2{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.per3{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.per4{
+    position: relative;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.Agregar{
+    position: relative;
+    margin-left: 400px;
+}
+.Eliminar{
+    position: relative;
+    margin-left: 400px;
+}
+.Enviar{
+    background: #07f391;
+    width: 20%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 150px;
+    border-radius: 22px;
+    position:absolute;
+    left: 40%;
+    top: 60%;
+    display: none;
+}
+.Eliminar2{
+    background: #f3a007;
+    width: 20%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 150px;
+    border-radius: 22px;
+    position:absolute;
+    left: 40%;
+    top: 60%;
+    display: none;
+
+}
+.nombre{
+    margin-left: 30%;
+    font-style: italic;
+    color: #ff9900;
+}
