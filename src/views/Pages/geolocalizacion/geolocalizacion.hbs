@@ -16,6 +16,44 @@
     </div>
   </div>
 </nav>
+    <h1>Seleccionar Ubicación</h1>
+    <!-- Div para mostrar el mapa -->
+    <div id="map"></div>
+    <!-- Botón para obtener la ubicación seleccionada -->
+    <button onclick="getSelectedLocation()">Seleccionar Ubicación</button>
+
+    <!-- Script para inicializar el mapa y obtener la ubicación seleccionada -->
+    <script>
+        let map;
+
+        function initMap() {
+            // Coordenadas iniciales del mapa (ejemplo: Nueva York)
+            const initialLocation = { lat: 40.7128, lng: -74.0060 };
+
+            // Inicializar el mapa
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: initialLocation,
+                zoom: 10
+            });
+
+            // Escuchar el evento de clic en el mapa para obtener la ubicación seleccionada
+            map.addListener('click', (event) => {
+                const selectedLocation = {
+                    lat: event.latLng.lat(),
+                    lng: event.latLng.lng()
+                };
+                // Aquí puedes manejar la ubicación seleccionada, por ejemplo, enviarla al servidor
+                console.log(selectedLocation);
+            });
+        }
+
+        // Función para obtener la ubicación seleccionada cuando se hace clic en el botón
+        function getSelectedLocation() {
+            // Aquí puedes obtener la ubicación actual del mapa y manejarla según sea necesario
+            const currentLocation = map.getCenter();
+            console.log(currentLocation);
+        }
+    </script>
     <!--cdn boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
