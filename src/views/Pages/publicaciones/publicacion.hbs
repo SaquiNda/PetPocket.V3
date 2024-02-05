@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPocket - Subir Video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #upload-container {
+            max-width: 600px;
+            margin: 120px;
+            
+        }
+
+        #video-upload {
+            border: 2px dashed #6e6c6c;
+            padding: 130px;
+            text-align: center;
+            cursor: pointer;
+            
+           
+        }
+
+        #video-input {
+            display: none;
+        }
+
+        #file-label {
+            font-size: 18px;
+            color: #555;
+        }
+
+        #publication-form {
+            margin-top: 30px;
+        }
+
+        #statistics-form {
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #sidebar {
+            width: 300px;
+            background-color: #fffdfd;
+            color: #161515;
+            padding: 30px;
+            box-sizing: 10px;
+            border: 1px solid #f87204;
+            margin-top: 50px;
+            margin-left: 50px;
+
+
+
+        }
+
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        #sidebar a {
+            display: block;
+            color: #020202;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        #sidebar a:hover {
+            text-decoration: underline;
+        }
+        #comments-section {
+            
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+        
+        <div id="sidebar">
+
+            <h2>Cargar</h2>
+
+            <a href="#"><img src="img/inicio.png" alt="..." width="45" height="45"> Inicio</a>
+            <br>
+
+            <a href="#"><img src="img/public (1).png" alt="..." width="45" height="45"> Publicaciones</a>
+
+            <br>
+
+
+            <a href="#"><img src="img/comentario.png" alt="..." width="45" height="45"> Comentarios</a>
+
+
+            <br>
+
+            <a href="#"><img src="img/estadistica.png" alt="..." width="45" height="45"> Estadística</a>
+
+            <br>
+            <center>
+            <a href="#">Volver a PetPocket</a>
+            <br>
+            <a href="#">Términos del Servicio</a>
+
+            <br>
+
+
+            <a href="#">Políticas de Privacidad</a>
+
+            <br>
+        </div>
+    </nav>
+
+    <br>
+    <div id="upload-container">
+        <center>
+        <h2>Subir Video a PetPocket</h2>
+
+
+        <!-- Video Upload Section -->
+        <div id="video-upload" onclick="document.getElementById('video-input').click()">
+            <input type="file" id="video-input" accept=".mp4, .webm">
+            <label for="video-input" id="file-label">Seleccionar el video para cargar<br>o arrastra el archivo</label>
+        </div>
+            <!-- Publication Form -->
+            <form id="publication-form">
+                <label for="resolution">Resolución (mínimo 720x1280)</label>
+                <br>
+
+                <label for="duration">Duración (hasta 10 minutos)</label>
+                <br>
+
+                <label for="size">Tamaño del archivo (menos de 10GB)</label>
+                <br>
+            </form>
+
+            <!-- Statistics Form -->
+            <form id="statistics-form">
+                <input type="file" id="stats-file" accept=".csv">
+            </form>
+        </center>
+        
+    </div>
+    <div id="comments-section">
+        <div class="comment">
+            <div class="comment-author"><img src="img/gente2.jpg" class="img-fluid" alt="..." width="40"
+                    height="40"> </div>
+        </div>
+        <!-- Add more comments as needed -->
+    </div>
+    
+</body>
+
+</html>
